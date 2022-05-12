@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anxiety</title>
+	<link rel="stylesheet" href="{% static 'css/articles.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|Open+Sans+Condensed:300|PT+Sans+Narrow" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class="navbar">
+		<img src="{% static 'images/healthymindslogo.png' %}" id="logo">
+		<div class="yoganav">
+			<a href="{% url 'yoga' %}">YOGA</a>
+		</div>
+		<div class="moodnav">
+			<a href="{% url 'moodtrackerm' %}">MOOD TRACKER</a>
+		</div>
+		<div class="dropdown">
+			<a href="{% url 'home' %}" class="dropbtn">MENTAL HEALTH
+			</a>
+			<div class="dropdown-content">
+				<a href="{% url 'general' %}">INTRODUCTION</a>
+				<a href="{% url 'depression' %}">DEPRESSION</a>
+				<a href="{% url 'anxiety' %}">ANXIETY</a>
+				<a href="{% url 'resources' %}">FINDING RESOURCES</a>
+			</div>
+		</div>
+		<a href="{% url 'home' %}">HOME</a>
+	</div>
+	<div id = "text">
+		<h1> ANXIETY </h1>
+			<h2>OVERVIEW</h2>
+				<p1 id ="overview">Anxiety is an expected part of life. Everyone can feel anxiety for a variety of different reasons and situations. It might be due to an issue at work, a deadline due, a tense relationship, before taking a test, and other variations. But anxiety disorders involve more than temporary worry, fear, or stress. For someone with an anxiety disorder, the temporary worry does not go away as quickly and can get worse over time depending on the situation and surroundings. The symptoms can interfere with day to day life and can affect relationships, social interactions, job performance, schoolwork, and generally their life as a whole.
+
+				There are several types of anxiety disorders, the most common include: Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder, and Phobias.</p1>
+
+			<h2>GENERALIZED ANXIETY DISORDER</h2>
+				<p1 id="gad">People with generalized anxiety disorder (GAD) display excessive anxiety or worry, most days for at least 6 months, about a number of things such as personal health, work, social interactions, and everyday routine life circumstances. The fear and anxiety can cause significant problems in areas of their life, such as social interactions, school, and work.
+				Generalized anxiety disorder symptoms include:
+				Feeling restless, wound-up, or on-edge
+				Being easily fatigued
+				Having difficulty concentrating; mind going blank
+				Being irritable
+				Having muscle tension
+				Difficulty controlling feelings of worry
+				Having sleep problems, such as difficulty falling or staying asleep, restlessness, or unsatisfying sleep</p1>
+			<h2>PANIC DISORDER</h2>
+				<p1 id="panic">People with panic disorder have recurrent unexpected panic attacks. Panic attacks are sudden periods of intense fear that come on quickly and reach their peak within minutes. Attacks can occur unexpectedly or can be brought on by a trigger, such as a feared object or situation.
+During a panic attack, people may experience:
+Heart palpitations, a pounding heartbeat, or an accelerated heart rate
+Sweating
+Trembling or shaking
+Sensations of shortness of breath, smothering, or choking
+Feelings of impending doom
+Feelings of being out of control
+People with panic disorder often worry about when the next attack will happen and actively try to prevent future attacks by avoiding places, situations, or behaviors they associate with panic attacks.</p1>
+			<h2>PHOBIAS</h2>
+				<p1 id="phobias">Phobias deal with specific fears that one person might have that create powerful reactions of strong, irrational fear. This is more than just a regular fear and most people with specific phobias have several things that can trigger those reactions; to avoid panic, they will work hard to avoid their triggers. 
+
+Other anxiety disorders include:
+Agoraphobia
+Selective mutism
+Separation anxiety disorder
+Substance/medication-induced anxiety disorder</p1>
+			<h2>CAUSES</h2>
+				<p1 id="causes">Scientists believe that many factors combine to cause anxiety disorders:
+Genetics. Studies support the evidence that anxiety disorders “run in families,” as some families have a higher-than-average amount of anxiety disorders among relatives.
+Environment. A stressful or traumatic event such as abuse, death of a loved one, violence or prolonged illness is often linked to the development of an anxiety disorder.</p1>
+	</div>
+
+
+
+
+</body>
+</html>
+

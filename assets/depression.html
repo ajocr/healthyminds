@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Major Depressive Disorder </title>
+	<link rel="stylesheet" href="{% static 'css/articles.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|Open+Sans+Condensed:300|PT+Sans+Narrow" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+	<div class="navbar">
+		<img src="{% static 'images/healthymindslogo.png' %}" id="logo">
+		<div class="yoganav">
+			<a href="{% url 'yoga' %}">YOGA</a>
+		</div>
+		<div class="moodnav">
+			<a href="{% url 'moodtrackerm' %}">MOOD TRACKER</a>
+		</div>
+		<div class="dropdown">
+			<a href="{% url 'home' %}" class="dropbtn">MENTAL HEALTH
+			</a>
+			<div class="dropdown-content">
+				<a href="{% url 'general' %}">INTRODUCTION</a>
+				<a href="{% url 'depression' %}">DEPRESSION</a>
+				<a href="{% url 'anxiety' %}">ANXIETY</a>
+				<a href="{% url 'resources' %}">FINDING RESOURCES</a>
+			</div>
+		</div>
+		<a href="{% url 'home' %}">HOME</a>
+	</div>
+	<h1>Major Depressive Disorder </h1> 
+	<p>Commonly termed as depression, this is a common yet grave mood disorder
+	that should not take lightly. It negatively affects people in their 
+	day-to-day activities as it feels like one is continuously carrying a heavy
+ 	burden. According to the World Health Organisation, more than 264 million 
+	people of all ages suffer from this disorder. While this is more common 
+	amongst women, teens and young adults, please note that anyone is susceptible 
+	to the illness and hence, you are not alone! </p>
+	<p> As stated earlier, MDD usually poses as a daily challenge to those who have it. These challenges can become so unbearable that people choose to end their lives to end their suffering. </p>
+
+	<p style="font-size: 1.250em"> However, everybody is different. </p>
+
+<p>The intensity of the health condition on each person varies. Hence, it is paramount that one is aware and professionally diagnosed for treatment to begin as soon as possible. </p>
+
+<h2> Types of MDD </h2>
+<p>Yes, there are types of depression, and you must be in the know. Each type has its set of symptoms; however, both can be chronic and liable to terrible relapses, especially when untreated. </p>
+
+<p style="font-size: 1.250em"> Even though you will be knowledgeable in a second, self-diagnosis is not advised as it can lead to more dangerous outcomes. </p>
+
+<h4> Helpful Definitions </h4>
+<ol>
+	<li><i>Depressive episodes</i> –<br>  The individual goes into the typically depressed mood. There is a sense of reduced energy and loss of interest and excitement. This usually results in relative inactivity for <b>at least two weeks</b>. </li>
+	<li><i>Manic episodes</i>-<br>  Contrary to depressive episodes, when experiencing the manic episode, the individual experiences a sense of inflated self-esteem, pressure of speech, and tends to be overly excited and testy. This usually results in a decreased need for sleep. </li>
+</ol>
+
+<p>Now to the types,</p>
+
+<h3>Recurrent Depressive Disorder</h3>
+<ul>
+	<li>Involves recurring depressive episodes only</li>
+	<li>Likely to suffer from anxiety symptoms (see page)</li>
+	<li>The feeling of low self-esteem and guilt</li>
+	<li>Loss of appetite</li>
+	<li>Troubled sleep</li>
+</ul>
+
+<img src="{% static 'images/Mild1.png' %}" alt="Recurrent Depressive Disorder Scale" width="500" height="300">
+
+<h3>Bipolar Affective Disorder</h3>
+<ul>
+	<li>Alternates between depressive episodes and manic episodes</li>
+	<li>Usually separated by the normal mood</li>
+	<li>The normal mood is largest subjective as everyone is different.</li>
+</ul>
+<p>We realise there are many routes and possibilities with depression. This is why self-diagnosis is not encouraged. Kindly check out our resource page for more.</p>
+
+<h2>Prevention Measures</h2>
+<p>Depression stems from psychological, social, biological factors. However, there are programs and general activities that can help reduce depression.</p>
+<p>Some include:<br>
+<ol type:"i">
+	<li>Mental health awareness programs in schools and at workplaces</li>
+	<li>Interventions for people exhibiting potential symptoms of depression</li>
+	<li>Exercises to improve positive thinking </li>
+</ol>
+Generally,<br>
+<ol type:"i">
+	<li>Have and eat a healthy diet
+	<li>Get enough sleep</li>
+	<li>Engage in self-care activities like meditation and yoga (check out our yoga page!)</li>
+</ol>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+html, body {
+	height: 100%;
+	font-family: 'Montserrat', serif;
+}
+@media screen and (max-width: 1060px) {
+	primary {width: 67%;}
+	secondary {width: 30%; margin-left: 3%;}
+
+}
+@media screen and (max-width: 768px) {
+	primary {width: 100%;}
+	secondary {width: 100%; margin: 0; border: none;}
+}
+
+img {max-width: 100%;}
+
+.navbar {
+	overflow: hidden;
+	margin: 0;
+	padding: 10px;
+	list-style-type: none;
+}
+#logo {
+	height: 37px;
+	float: left;
+	margin-top: 11px;
+	position: absolute;
+}
+.navbar a {
+	float: right;
+	text-align: center;
+	font-size: 14px;
+	padding: 14px 16px;
+	text-decoration: none;
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	font-weight: lighter;
+}
+.dropdown {
+	float: right;
+	overflow: hidden;
+}
+.dropdown .dropbtn {
+	font-size: 14px;
+	border: none;
+	outline: none;
+
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: rgb();
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: gray;
+	min-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+
+}
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+
+}
+.dropdown-content a:hover {
+	background-color: gray;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.parallax {
+	background-image: url("cloud.jpg");
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+
+}
+.pagescontainer {
+	background-color: rgb(248, 248, 238);
+	min-height: 270px;
+	width: 100%;
+	height: 40%;
+	font-family: 'Nanum Gothic', sans-serif;
+	margin-top: -40px;
+}
+#missionheader {
+	font-size: 40px;
+	text-align: center;
+	line-height: 65px;
+	font-weight: bolder;
+	padding-top: 20px;
+}
+#missionpara {
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+	white-space: wrap;
+	margin-left: 100px;
+	margin-right: 100px;
+	
+}
+.uniquecontainer {
+	min-height: 600px;
+	margin-top: -20px;
+	background-color: rgb(248, 248, 238);
+}
+#uniquetitle {
+	text-align: center;
+	
+}
+.uniquecolumn-left {
+	float: left;
+	width: 30%;
+	padding: 10px;
+	margin-left: 20px;
+
+}
+.uniquecolumn-center {
+	float:left;
+	width: 30%;
+	padding: 20px;
+	margin-top: -20px;
+}
+.uniquecolumn-right {
+	float:left;
+	width: 30%;
+	padding: 0px;
+	margin-top: -10px;
+}
+
+.top-text {
+	color: #255da0;
+	font-style: bolder;
+	font-size: 19px;
+	text-align: center;
+}
+.body-text {
+	text-align: center;
+	line-height: 23px;
+}
+.aboutmediv {
+	min-height: 700px;
+	background-color: #33cccc;
+	margin-top: -20px;
+	display: inline-block;
+}
+#pig {
+	height: 350px;
+	float: left;
+	padding: 200px 0px 0px 200px;
+}
+
+#abouttitle {
+	font-size: 33px;
+	
+	padding: 200px 0px 0px 700px;
+	position: relative;
+	
+}
+#aboutpara {
+	position: relative;
+	font-size: 16px;
+	padding: 0px 200px 0px 700px;
+	font-weight: bold;
+	line-height: 23px;
+}
+#aboutbutton {
+	margin-bottom: 100px;
+	margin-left: 150px;
+	cursor: pointer;
+	background-color:#406cb4;
+	color: white;
+	border:none;
+	padding: 5px 10px 5px 10px;
+	font-family: 'Montserrat', serif;
+	letter-spacing: 0px;
+	font-weight: bold;
+}
+.earthgif {
+	width: 55%;
+	margin-left: 50px;
+	margin-bottom: 20px;
+
+}
+#mountainpic {
+	width: 63%;
+	margin-left: 50px;
+
+}
+.dinosaurimg {
+	width: 80%;
+	margin-bottom: 30px;
+}
+
+.importancecontainer {
+	min-height: 500px;
+}
+#importancetitle {
+	
+	text-align: center;
+	padding-top: 10px;
+}
+#importancegen {
+	text-align: center;
+	font-size: 18px;
+	padding: 0px 250px 0px 250px;
+	line-height: 25px;
+	position: relative;
+}
+#emotionaltitle {
+	text-align: center;
+	position: relative;
+	padding-top: 20px;
+}
+#emotionalpara {
+	text-align: center;
+	font-size: 18px;
+	line-height: 25px;
+	position: relative;
+	padding: 0px 250px 0px 250px;
+}
+#improvetitle {
+	text-align: center;
+	padding-top: 10px;
+}
+#generalpara {
+	text-align: center;
+	padding: 0px 250px 0px 250px;
+	line-height: 25px;
+	font-size: 18px;
+	position: relative;
+}
+#reachouttitle {
+	text-align: center;
+	padding-top: 30px;
+}
+#reachoutpara {
+	text-align: center;
+	padding: 0px 250px 0px 250px;
+	line-height: 25px;
+	font-size: 18px;
+	position: relative;
+}
+.reachoutbullet {
+	line-height: 25px;
+	font-size: 18px;
+	position: relative;
+	padding: 0px 250px 0px 400px;
+}
+.resourcesbuttoncontainer {
+
+}
+#resourcesbutton {
+	background-color: lightgrey;
+	border: none;
+	color: black;
+	padding: 8px 20px;
+	text-align: center;
+	margin-left: 400px;
+	/*display: inline-block;*/
+	cursor: pointer;
+	border-radius: 4px;
+
+
+}
+#reachoutpara2 {
+	text-align: center;
+	padding: 100px 250px 0px 250px;
+	line-height: 25px;
+	font-size: 18px;
+	position: relative;
+}
+#resourcesgif {
+	height: 150px;
+	float: right;
+	padding: 0px 300px;
+}
+.footer-basic {
+	width: 100%;
+	background-color: rgb(248, 248, 238);
+	color: black;
+	min-height: 150px;
+}
+.footer-basic ul {
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.6;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+.footer-basic li {
+	padding: 0 10px;
+	
+}
+.footer-basic ul a {
+	color: inherit;
+	text-decoration: none;
+	opacity: 0.8;
+	display: block;
+}
+.footer-basic li a {
+	display: block;
+}
+.footer-basic ul a:hover {
+	opacity: 1;
+
+}
+.footer-basic .copyright {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 13px;
+	margin-bottom:0;
+	color: #aaa;
+}
+

@@ -1,0 +1,57 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>General Information</title>
+	<link rel="stylesheet" href="{% static 'css/articles.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|Open+Sans+Condensed:300|PT+Sans+Narrow" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="navbar">
+		<img src="{% static 'images/healthymindslogo.png' %}" id="logo">
+		<div class="yoganav">
+			<a href="{% url 'yoga' %}">YOGA</a>
+		</div>
+		<div class="moodnav">
+			<a href="{% url 'moodtrackerm' %}">MOOD TRACKER</a>
+		</div>
+		<div class="dropdown">
+			<a href="{% url 'home' %}" class="dropbtn">MENTAL HEALTH
+			</a>
+			<div class="dropdown-content">
+				<a href="{% url 'general' %}">INTRODUCTION</a>
+				<a href="{% url 'depression' %}">DEPRESSION</a>
+				<a href="{% url 'anxiety' %}">ANXIETY</a>
+				<a href="{% url 'resources' %}">FINDING RESOURCES</a>
+			</div>
+		</div>
+		<a href="{% url 'home' %}">HOME</a>
+	</div>
+	<h1>
+		What Is Mental Health?
+	</h1>
+	<p>
+		In simplest terms, it is how a person feels emotionally and physiologically. But there are a lot of factors that contribute to this definition. If a person gets up in the morning, if they shower, if they exercise, meditate, do schoolwork, eat, go to work, these are all things that will impact mental health, for the better or for the worse. That is the thing about this topic, every single person is affected by events in different ways and every single person has different a different mental state.
+	</p>
+	<h1>
+		How To Take Care of Your Mental Health?
+	</h1>
+	<p>
+		Taking care of your mind is the key factor in living a good life. Healthy mind = healthy body = healthy life. There are several ways to keep a positive mental outlook. One way is to exercise daily, not just your body but your mind. This can be done by reading, journaling, or even drawing. Another good thing to do is make breakfast every day. The first meal of the day is the most important, why not make it special? Also, try getting into a routine of things you do daily. This can consist of making breakfast, exercising, going outside and walking your dog if you have one, watching a tv show. Anything you do every day, make into a list and check it off as you do it. This will keep your mind always looking forward to something, and make sure your mind as healthy as possible.
+	</p>
+	<h1>
+		What Is Mental Illness?
+	</h1>
+	<p>
+		Just like how with physical health there is always physical illness, with mental health there always comes mental illness. There are several types of mental illnesses. The types are mood disorders, anxiety disorders, personality disorders, eating disorders, psychotic disorders, trauma-related disorders, and substance abuse disorders. Mood disorders consist of depression and bipolar disorder, which is one of the most important mental illnesses. Also, one of the most important is anxiety. These are the most prominent in the category. 
+	</p>
+	<h1>
+		Anxiety and Depression
+	</h1>
+	<p>
+		Anxiety disorders are very common and come in a large variety. One person with anxiety could have completely different feelings and symptoms than the next person. This is the same for depression. There are so many types of anxiety and depression that the different symptoms are endless. In this website, there are tabs labeled “Anxiety” and “Depression.” Dive into them to learn more about these mental illnesses.
+	</p>
+</body>
+</html>
+

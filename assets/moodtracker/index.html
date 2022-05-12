@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+{% if all_moodtrackers %}
+    <h3>Your Moodtracker History:</h3>
+    <ul>
+        {% for moodtracker in all_moodtrackers %}
+        <li>{{ moodtracker.date }}</li>
+        <h4>Mood: {{ moodtracker.mood }}</h4>
+        <h4>Activities: {{ moodtracker.activities }}</h4>
+        {% endfor %}
+    </ul>
+
+{% else %}
+    <h3>You do not have any Moodtracker entries</h3>
+{% endif %}
+
+<a href = "/moodtracker/">Write Moodtracker Entry</a>
+<a href = "/journal/history">View Journal History</a>
+</html>

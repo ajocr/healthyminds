@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|Open+Sans+Condensed:300|PT+Sans+Narrow" rel="stylesheet">
+    <title>{% block title %}Login {% endblock %}</title>
+    {% block styles %}
+    <link rel="stylesheet" href="{% static 'css/journalindex.css' %}">
+    {% endblock %}
+    
+</head>
+
+<body>
+{% block content %}
+{% if all_journals %}
+    <h3 class="history">Your Journal Entry History:</h3>
+    <ul>
+        {% for journal in all_journals %}
+        <h4 class="date">{{ journal.date }}</h4>
+        <h4 class="entry">Entry: {{ journal.entry }}</h4>
+        {% endfor %}
+    </ul>
+
+{% else %}
+    <h3>You do not have any Journal entries</h3>
+{% endif %}
+
+<div>
+<a href = "/journal/" class="journalentry">Write Journal Entry</a>
+</div>
+<div>
+<a href = "/moodtracker/history/" class="moodhistory">View Moodtracker History</a>
+</div>
+{% endblock %}
+</body>
+</html>

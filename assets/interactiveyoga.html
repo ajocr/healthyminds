@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Let's Do Yoga!</title>
+	<link rel="stylesheet" href="{% static 'css/interactiveyoga.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|Open+Sans+Condensed:300|PT+Sans+Narrow" rel="stylesheet">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="navbar">
+		<img src="{% static 'images/healthymindslogo.png'%}" id="logo">
+		<div class="yoganav">
+			<a href="{% url 'yoga' %}">YOGA</a>
+		</div>
+		<div class="moodnav">
+			<a href="{% url 'login' %}">LOGIN</a>
+		</div>
+		<div class="dropdown">
+			<a href="{% url 'home' %}" class="dropbtn">MENTAL HEALTH
+			</a>
+			<div class="dropdown-content">
+				<a href="{% url 'general' %}">INTRODUCTION</a>
+				<a href="{% url 'depression' %}">DEPRESSION</a>
+				<a href="{% url 'anxiety' %}">ANXIETY</a>
+				<a href="{% url 'resources' %}">FINDING RESOURCES</a>
+			</div>
+		</div>
+		<a href="{% url 'home' %}">HOME</a>
+	</div>
+
+	<h1>Yoga Poses</h1>
+
+	<div class="block1" style="float: right;">
+		<h2>Child's Pose</h2>
+		<ul>
+		<div class = "center">
+    		<img src="{% static 'images/child.png' %}" alt="Child's Pose">
+    	</div>
+    		<p>Difficulty: 1 out of 5</p>
+			<p>The child's pose is a great pose to do in between difficult poses. It relaxes the body 
+				<br>while stretching the thighs, hips, and ankles.</p>
+		</ul>
+	</div>
+
+	<div class="block" >
+		<h2>Downward Facing Dog  Pose</h2>
+		<ul>
+		<div class = "center">
+    		<img src="{% static 'images/downwarddog.png' %}" alt="Downward Facing Dog Pose">
+    	</div>
+    		<p>Difficulty: 2 out of 5</p>
+			<p>The downward facing dog pose is a great pose for calming the mind. It stimulates blood circulation and rests 
+				<br>the spine. This pose also strengthens the entire body and stretches the back side of the body.</p>
+		</ul>
+	</div>	
+
+	<div class="block1" style="float: right;">
+		<h2>Warrior I  Pose</h2>
+		<ul>
+		<div class = "center">
+    		<img src="{% static 'images/warriori.png' %}" alt="Warrior I Pose">
+    	</div>
+    		<p>Difficulty: 2 out of 5</p>
+			<p>Something great about this pose is that it energizes the entire body. It also improves balance, stability, and focus.</p>
+		</ul>
+	</div>	
+
+	<div class="block">
+		<h2>Warrior II Pose</h2>
+		<ul>
+		<div class = "center">
+			<img src="{% static 'warriorii.jpg' %}" alt="Warrior II Pose" id="warrior2pic">
+		</div>
+			<p>Difficulty: 2 out of 5</p>
+			<p>The warrior II pose is beneficial because it stretches the hips, groin, and shoulders. 
+				<br>It also improves circulation and helps develop balance.</p>
+		</ul>
+	</div>
+
+	<div class="block1" style="float: right;">
+		<h2>Upward facing dog Pose</h2>
+		<ul>
+		<div class = "center">
+			<img src="{% static 'images/upwarddog.jpg' %}" alt="Upward Dog Pose">
+		</div>
+			<p>Difficulty: 3 out of 5</p>
+			<p>This pose is known for improving lung capacity. This is because while holding the pose, the chest is 
+				<br>stretched greatly, allowing a lot of room to enter and stay in the lungs.</p>
+		</ul>
+	</div>
+
+	<div class="block">
+		<h2>Triangle Pose</h2>
+		<ul>
+		<div class = "center">
+			<img src="{% static 'images/triangle.jpg' %}" alt="Triangle Pose">
+		</div>
+			<p>Difficulty: 3 out of 5</p>
+			<p>The triangle pose improves digestion and constipation, as well as stretches and strengthens the 
+				<br>muscles in the legs. This pose also relieves stress.</p>
+		</ul>
+	</div>
+
+	<div class="block1" style="float: right;">
+		<h2>Tree Pose</h2>
+		<ul>
+		<div class = "center">
+    		<img src="{% static 'images/tree.jpg' %}" alt="Tree Pose">
+    	</div>
+    		<p>Difficulty: 3 out of 5</p>
+    		<p>The tree pose helps with balance and stability in the legs. It also strengthens the ligaments 
+				<br>in the foot, and tones all the muscles up the leg to the butt.</p>
+		</ul>
+	</div>
+
+	<div class="block">
+		<h2>Low Lunge Pose</h2>
+		<ul>
+		<div class = "center">
+    		<img src="{% static 'images/lowlunge.png' %}" alt="Low Lunge Pose">
+    	</div>
+    		<p>Difficulty: 4 out of 5</p>
+			<p>While doing the low lunge, tension in the hips will be released. This pose also strengthens the knees and
+				 <br>stretches the hamstrings, quads, and groin. Additionally, this pose helps build mental focus.</p>
+		</ul>
+	</div>
+
+	<div class="block1" style="float: right;">
+		<h2>Bridge Pose</h2>
+		<ul>
+		<div class = "center">
+    		<img src="{% static 'images/bridge.png' %}" alt="Bridge Pose">
+    	</div>
+    		<p>Difficulty: 4 out of 5</p>
+			<p>This pose strengthens the muscles in the back, butt, legs, and ankles. It is also great for opening up the 
+				<br>chest and rejuvenating tired legs</p>
+		</ul>
+	</div>
+
+	<div class="block">
+		<h2>Plank Pose</h2>
+		<ul>
+		<div class = "center">
+    		<img src="{% static 'images/plank.png' %}" alt="Plank Pose">
+    	</div>
+    		<p>Difficulty: 5 out of 5</p>
+			<p>The plank channels and tones all of the muscles in the core. While strengthening the 
+				<br>core muscles, this pose also improves posture if done correctly.</p>
+		</ul>
+	</div>
+	
+</body>
+</html>

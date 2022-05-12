@@ -1,0 +1,7 @@
+<html>
+    <ul>
+        {% for journal in all_journals %}
+        <li><a href = "/journal/{{ journal.id }}/">{{ journal.date }}</a></li>
+        {% endfor %}
+    </ul>
+</html>

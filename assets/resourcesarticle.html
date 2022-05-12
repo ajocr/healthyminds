@@ -1,0 +1,78 @@
+{% load static %}
+<html>
+<head>
+	<title>Outside Resources</title>
+	<link rel="stylesheet" href="{% static 'css/articles.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|Open+Sans+Condensed:300|PT+Sans+Narrow" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>	
+<body>
+	<div class="navbar">
+		<img src="{% static 'images/healthymindslogo.png' %}" id="logo">
+		<div class="yoganav">
+			<a href="{% url 'yoga' %}">YOGA</a>
+		</div>
+		<div class="dropdown">
+			<a href="{% url 'home' %}" class="dropbtn">MENTAL HEALTH
+			</a>
+			<div class="dropdown-content">
+				<a href="{% url 'general' %}">INTRODUCTION</a>
+				<a href="{% url 'depression' %}">DEPRESSION</a>
+				<a href="{% url 'anxiety' %}">ANXIETY</a>
+				<a href="{% url 'resources' %}">FINDING RESOURCES</a>
+			</div>
+		</div>
+		<a href="{% url 'home' %}">HOME</a>
+	</div>	
+	<h1>Outside Resources</h1>
+	<p>If you are trying to decide whether or not you should be seeking help outside of our website for any reason, there are some guidelines that you may want to consider that could help you make your decision. According to the American Psychology Association, you should consider therapy when something in your life is causing you distress and is interfering with some part of your life. </p>
+	<p>	
+		“When thinking about distress, here are some issues to consider: <br>
+	•	Do you or someone close to you spend some amount of time every week thinking about the problem?<br>
+	•	Is the problem embarrassing, to the point that you want to hide from others?<br>
+	•	Over the past few months, has the problem reduced your quality of life?<br>
+	</p>
+	<p>
+		When thinking about interference, some other issues may deserve consideration:<br>
+	•	Does the problem take up considerable time (e.g., more than an hour per day)?<br>
+	•	Have you curtailed your work or educational ambitions because of the problem?<br>
+	•	Are you rearranging your lifestyle to accommodate the problem?” (American Psychology Association, 2017)<br>
+	</p>
+	<p>
+		It is important to consider these questions when thinking about going to therapy, and if you answer “yes” to any of them, then it may be a good option for you.
+	</p>
+	<p>
+		It is also important to know that when it comes to therapy, you have many options that you may want to consider. It might be beneficial for you learn about the various approaches some therapists may take when it comes to your treatment, and we want to help you make the most informed decision possible when it comes to your mental health. Although we will not cover ever possible psychotherapy approach, we will summarize some of the more popular types of therapy and provide you sources to continue exploring.
+	</p>
+	<p>
+			•	Psychoanalysis and Psychodynamic Therapy – This approach builds a close working partnership between a patient and a therapist in order to change behaviors, feelings, and thoughts through uncovering unconscious meaning.<br>
+			
+			•	Behavior Therapy – This approach focuses on how learning can affect behavior, and it attempts to develop new behaviors.<br>
+			
+			•	Cognitive Therapy – This approach focuses more on the thought process of the patient and how changing thoughts can shape their emotions and behaviors.<br>
+			
+			•	Cognitive-Behavioral Therapy (CBT) – CBT is a combination of both the behavioral and cognitive approaches. It focuses on understanding and changing negative thought patterns while also altering behavioral responses to stressful situations.<br>
+
+			•	Humanistic Therapy – This approach emphasizes reaching an individual’s maximum potential, and it also focuses on respecting others.<br>
+			•	Integrative or Holistic Therapy – This approach to psychotherapy uses a combination of various other approaches in order to meet the needs of each individual client. 
+			</p>
+			<p>
+			We hope that you were able to learn a bit more about the importance of therapy and its different forms, and we encourage you to continue researching because healthy minds create a happy world. 
+			</p>
+		<h2>Works Cited</h2>
+			<p>
+			“Different Approaches to Psychotherapy.” American Psychological Association, American Psychological Association, 2021, www.apa.org/topics/therapy/psychotherapy-approaches. 
+			</p>
+			<p>
+			Holland, Kimberly. “Cognitive Behavioral Therapy for Depression.” Healthline, Healthline Media, 20 Aug. 2018, www.healthline.com/health/depression/cognitive-behavioral-therapy. 
+			</p>
+			<p>
+			Raypole, Crystal. “Why Should I Go to Therapy? 8 Signs It's Time to See a Therapist.” GoodTherapy.org Therapy Blog, 17 Feb. 2020, www.goodtherapy.org/blog/why-should-i-go-to-therapy-8-signs-its-time-to-see-a-therapist-0118197#:~:text=The%20American%20Psychological%20Association%20suggests%20considering%20therapy%20when,embarrassment%20or%20makes%20you%20want%20to%20avoid%20others. 
+			</p>
+			<p>
+			“Therapy.” Mental Health America, 2021, www.mhanational.org/therapy#:~:text=The%20following%20are%20a%20few%20common%20types%20of,and%20solve%20problems%20better.%20...%20More%20items...%20. 
+			</p>
+	</body>
+
+</html>
+

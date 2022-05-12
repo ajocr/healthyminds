@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<h2>Moodtracker Feature</h2>
+<h4>*Please enter Date in mm/dd/yyyy format*</h4>
+{% block body %}
+<div class="container">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}
+<a href = "/moodtracker/history/">View Moodtracker History</a>
+</html>
